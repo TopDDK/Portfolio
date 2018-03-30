@@ -17,24 +17,24 @@
                 <!-- <img src="images/PortfoliLogo.png" alt="logo"> -->
             </a>
         </h1>
-        <ul class="header--gmb">
+        <ul class="header--gnb">
             <li>                            
-                <a href="#work">
+                <a href="#work" class="header--gnb__work">
                     <i class="fas fa-cogs"></i><br>Specialties
                 </a>
             </li>
             <li>                            
-                <a href="#portfolio">
+                <a href="#portfolio" class="header--gnb__portfolio">
                     <i class="fas fa-briefcase"></i><br>Portfolio
                 </a>
             </li>
             <li>                            
-                <a href="#profile">
+                <a href="#profile" class="header--gnb__profile">
                     <i class="fas fa-user"></i><br>Profile
                 </a>
             </li>
             <li>                            
-                <a href="#contact">
+                <a href="#contact" class="header--gnb__contact">
                     <i class="fas fa-envelope"></i><br>Contact
                 </a>
             </li>
@@ -451,21 +451,8 @@ $(document).ready(function(){
         }); 
     });
 
-        $(document).ready(function(){ 
-$("#popup_open").click(function(){ 
-$("#popup_wrap").css("display", "block"); 
-$("#mask").css("display", "block"); 
-}); 
-$("#popup_close").click(function(){ 
-$("#popup_wrap").css("display", "none"); 
-$("#mask").css("display", "none"); 
-}); 
-}); 
+
 //버튼 클릭시 레이어 팝업 띄우기!! 배경 쉐도우 처리
-
-
-
-
 
       /* 
         $("#popup_open>a").click(function(){ 
@@ -478,7 +465,27 @@ $("#mask").css("display", "none");
         }); */
 
         /* 버튼 클릭시 레이어 팝업 띄우기!! 배경 쉐도우 처리 */
+        
+        $(".header--gnb__work").click(function() {
+            $(".header--gnb a").css("color","#999");
+            $(".header--gnb__work").css("color","turquoise");
+        });
 
+        $(".header--gnb__portfolio").click(function() {
+            $(".header--gnb a").css("color","#999");
+            $(".header--gnb__portfolio").css("color","turquoise");
+        });
+
+        $(".header--gnb__profile").click(function() {
+            $(".header--gnb a").css("color","#999");
+            $(".header--gnb__profile").css("color","turquoise");
+        });
+
+        $(".header--gnb__contact").click(function() {
+            $(".header--gnb a").css("color","#999");
+            $(".header--gnb__contact").css("color","turquoise");
+        });
+        
 
 
 </Script>
