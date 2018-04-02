@@ -11,7 +11,7 @@
     <title>TopDD</title>
 </head>
 <body>    
-    <header>
+    <header class="header--top">
         <h1 class="header--logo">
             <a href="#mainimages">
                 <!-- <img src="images/PortfoliLogo.png" alt="logo"> -->
@@ -390,19 +390,17 @@
     
 </body>
 <Script>
-    /* $(function () {
-            var menupos = $("#navi").offset().top;
-            $(window).scroll(function () {
-                if ($(window).scrollTop() >= menupos) {
-                    $("#navi").css("position", "fixed");
-                    $("#navi").css("top", "0");
-                } else {
-                    $("#navi").css("position", "relative");
-                    $("#navi").css("top", "");
-                }
-            });
-        });
-        스크롤을 내리면 메뉴가 고정되는 스크립트  */
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+        $(".header--top").addClass("header--scrool");
+    } else {
+        $(".header--top").removeClass("header--scrool");
+    }
+});
+
+
 //web시안 01
 $(document).ready(function(){   
         $(".PopUp01").click(function(){ 
